@@ -72,7 +72,7 @@ export default function Hero() {
       </div>
 
       <div className="hero-fade hero-d5 relative z-10 mx-4 sm:mx-5 lg:mx-10 mb-6 sm:mb-8 lg:mb-10">
-        <div className="bg-white/10 backdrop-blur-xl border border-white/15 rounded-2xl px-4 sm:px-6 lg:px-10 py-4 sm:py-5 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6">
+        <div className="bg-white/10 backdrop-blur-xl border border-white/15 rounded-3xl px-4 sm:px-6 lg:px-10 py-4 sm:py-5 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6">
           {STATS.map((s) => (
             <div key={s.l} className="flex flex-col items-center text-center">
               <p className="font-display text-2xl lg:text-3xl font-light text-white">{s.n}</p>

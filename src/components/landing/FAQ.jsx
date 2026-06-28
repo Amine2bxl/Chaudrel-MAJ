@@ -43,7 +43,7 @@ export default function FAQ() {
           </h2>
         </Reveal>
 
-        <Reveal from="fade" className="bg-white rounded-3xl border border-brand-gold/10 overflow-hidden shadow-sm divide-y divide-brand-gold/10">
+        <Reveal from="fade" className="bg-white rounded-[2rem] border border-brand-gold/10 overflow-hidden shadow-sm divide-y divide-brand-gold/10">
           {FAQS.map((faq, i) => (
             <details
               key={i}

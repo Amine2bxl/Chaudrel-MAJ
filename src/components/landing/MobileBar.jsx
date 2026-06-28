@@ -42,7 +42,7 @@ export default function MobileBar() {
           aria-label={`${BRAND.name} ${BRAND.tagline} — retour en haut`}
           className="flex items-center gap-2.5 group min-w-0"
         >
-          <div className="h-10 w-10 rounded-lg bg-white p-0.5 ring-1 ring-brand-gold/30 flex items-center justify-center flex-shrink-0">
+          <div className="h-10 w-10 rounded-xl bg-white p-0.5 ring-1 ring-brand-gold/30 flex items-center justify-center flex-shrink-0">
             <img src={LOGO} alt="" className="h-full w-full object-contain" />
           </div>
           <span className="flex flex-col leading-none min-w-0">

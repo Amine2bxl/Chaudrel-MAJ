@@ -38,9 +38,9 @@ export default function CTA() {
                 <a
                   key={name}
                   href={`tel:${tel}`}
-                  className="flex items-center gap-4 group p-4 bg-white/5 hover:bg-white/10 border border-white/8 hover:border-brand-gold/30 rounded-2xl transition-all duration-300 min-h-[76px]"
+                  className="flex items-center gap-4 group p-4 bg-white/5 hover:bg-white/10 border border-white/8 hover:border-brand-gold/30 rounded-3xl transition-all duration-300 min-h-[76px]"
                 >
-                  <div className="w-10 h-10 rounded-xl bg-brand-gold/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-gold/30 transition-colors duration-300">
+                  <div className="w-10 h-10 rounded-2xl bg-brand-gold/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-gold/30 transition-colors duration-300">
                     <Phone className="w-4 h-4 text-brand-gold" aria-hidden="true" />
                   </div>
                   <div className="flex-1 min-w-0">
@@ -56,9 +56,9 @@ export default function CTA() {
 
               <a
                 href={`mailto:${BRAND.email}`}
-                className="flex items-center gap-4 group p-4 bg-white/5 hover:bg-white/10 border border-white/8 hover:border-brand-gold/30 rounded-2xl transition-all duration-300 min-h-[76px] md:col-span-1"
+                className="flex items-center gap-4 group p-4 bg-white/5 hover:bg-white/10 border border-white/8 hover:border-brand-gold/30 rounded-3xl transition-all duration-300 min-h-[76px] md:col-span-1"
               >
-                <div className="w-10 h-10 rounded-xl bg-brand-gold/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-gold/30 transition-colors duration-300">
+                <div className="w-10 h-10 rounded-2xl bg-brand-gold/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-gold/30 transition-colors duration-300">
                   <Mail className="w-4 h-4 text-brand-gold" aria-hidden="true" />
                 </div>
                 <div className="flex-1 min-w-0">
@@ -71,8 +71,8 @@ export default function CTA() {
                 />
               </a>
 
-              <div className="flex items-center gap-4 p-4 bg-white/5 border border-white/8 rounded-2xl min-h-[76px] md:col-span-1">
-                <div className="w-10 h-10 rounded-xl bg-brand-gold/20 flex items-center justify-center flex-shrink-0">
+              <div className="flex items-center gap-4 p-4 bg-white/5 border border-white/8 rounded-3xl min-h-[76px] md:col-span-1">
+                <div className="w-10 h-10 rounded-2xl bg-brand-gold/20 flex items-center justify-center flex-shrink-0">
                   <MapPin className="w-4 h-4 text-brand-gold" aria-hidden="true" />
                 </div>
                 <div className="flex-1 min-w-0">
@@ -122,7 +122,7 @@ const PROPERTY_TYPES = [
 ];
 
 const inputClass =
-  'w-full bg-[#1C1C1C] border border-white/12 rounded-xl px-4 py-3 text-white text-[14px] font-light placeholder:text-white/20 outline-none focus:border-brand-gold/50 transition-all duration-200';
+  'w-full bg-[#1C1C1C] border border-white/12 rounded-2xl px-4 py-3 text-white text-[14px] font-light placeholder:text-white/20 outline-none focus:border-brand-gold/50 transition-all duration-200';
 const labelClass =
   'block text-[10px] tracking-[0.18em] uppercase text-white/40 font-medium mb-2';
 
@@ -164,7 +164,7 @@ function ContactForm() {
 
   if (sent) {
     return (
-      <div className="bg-white/5 border border-white/10 rounded-3xl p-10 flex flex-col items-center justify-center h-full text-center min-h-[280px] sm:min-h-[400px]">
+      <div className="bg-white/5 border border-white/10 rounded-[2rem] p-10 flex flex-col items-center justify-center h-full text-center min-h-[280px] sm:min-h-[400px]">
         <div className="w-16 h-16 rounded-full bg-brand-gold/20 flex items-center justify-center mb-6" aria-hidden="true">
           <span className="text-3xl text-brand-gold">✓</span>
         </div>
@@ -183,7 +183,7 @@ function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-white/5 border border-white/10 rounded-3xl p-5 sm:p-7 lg:p-8 space-y-4 sm:space-y-5"
+      className="bg-white/5 border border-white/10 rounded-[2rem] p-5 sm:p-7 lg:p-8 space-y-4 sm:space-y-5"
       noValidate
     >
       {/* Grille interne 2 col (md+) — symétrie parfaite sur tablette ET PC.
@@ -211,7 +211,7 @@ function ContactForm() {
 
         {/* Localisation : fieldset pleine largeur qui contient sa PROPRE grille 2 col.
             Chaque ligne est soit une paire (CP + Ville) soit un col-span-2. */}
-        <fieldset className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 p-4 sm:p-5 bg-white/[0.03] border border-white/8 rounded-2xl">
+        <fieldset className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 p-4 sm:p-5 bg-white/[0.03] border border-white/8 rounded-3xl">
           <legend className="col-span-1 md:col-span-2 px-2 text-[10px] tracking-[0.18em] uppercase text-brand-goldLight/80 font-semibold mb-1">
             Localisation
           </legend>
@@ -290,7 +290,7 @@ function ContactForm() {
         {/* Bouton : pleine largeur (2 col) */}
         <button
           type="submit"
-          className="md:col-span-2 w-full py-3.5 sm:py-4 bg-brand-gold hover:bg-brand-goldLight text-white text-[13px] tracking-[0.15em] uppercase font-semibold rounded-2xl transition-all duration-300 shadow-lg shadow-brand-gold/20"
+          className="md:col-span-2 w-full py-3.5 sm:py-4 bg-brand-gold hover:bg-brand-goldLight text-white text-[13px] tracking-[0.15em] uppercase font-semibold rounded-3xl transition-all duration-300 shadow-lg shadow-brand-gold/20"
         >
           Envoyer ma demande →
         </button>

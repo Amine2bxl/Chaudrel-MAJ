@@ -55,9 +55,9 @@ export default function Benefits() {
               as="article"
               key={b.title}
               delay={i * 80}
-              className="group bg-white/5 hover:bg-white/10 border border-white/10 hover:border-brand-gold/30 rounded-2xl p-5 sm:p-7 transition-all duration-300"
+              className="group bg-white/5 hover:bg-white/10 border border-white/10 hover:border-brand-gold/30 rounded-3xl p-5 sm:p-7 transition-all duration-300"
             >
-              <div className="w-10 h-10 rounded-xl bg-brand-gold/15 flex items-center justify-center mb-5 group-hover:bg-brand-gold/25 transition-colors duration-300">
+              <div className="w-10 h-10 rounded-2xl bg-brand-gold/15 flex items-center justify-center mb-5 group-hover:bg-brand-gold/25 transition-colors duration-300">
                 <b.icon className="w-5 h-5 text-brand-gold" strokeWidth={1.5} aria-hidden="true" />
               </div>
               <h3 className="font-display text-lg font-light text-white mb-2">{b.title}</h3>

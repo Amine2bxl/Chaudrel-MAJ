@@ -42,7 +42,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-14">
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <div className="h-14 w-14 lg:h-16 lg:w-16 rounded-xl overflow-hidden flex-shrink-0 border border-brand-gold/40 bg-white p-1 flex items-center justify-center">
+              <div className="h-14 w-14 lg:h-16 lg:w-16 rounded-2xl overflow-hidden flex-shrink-0 border border-brand-gold/40 bg-white p-1 flex items-center justify-center">
                 <img src={LOGO} alt={`${BRAND.name} ${BRAND.tagline}`} className="h-full w-full object-contain" width="64" height="64" />
               </div>
               <div>
@@ -65,7 +65,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="w-9 h-9 flex items-center justify-center rounded-xl bg-white/6 hover:bg-brand-gold/20 hover:text-brand-gold border border-white/8 transition-all duration-300"
+                  className="w-9 h-9 flex items-center justify-center rounded-2xl bg-white/6 hover:bg-brand-gold/20 hover:text-brand-gold border border-white/8 transition-all duration-300"
                 >
                   <Icon className="w-4 h-4" />
                 </a>

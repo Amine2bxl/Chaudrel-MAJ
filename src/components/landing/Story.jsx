@@ -14,7 +14,7 @@ export default function Story() {
       <div className="max-w-7xl mx-auto px-5 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-center">
           <Reveal from="left" className="relative order-2 lg:order-1">
-            <div className="rounded-3xl overflow-hidden aspect-[4/5] bg-white">
+            <div className="rounded-[2rem] overflow-hidden aspect-[4/5] bg-white">
               <img
                 src={IMAGES.story}
                 alt={`Intérieur rénové par ${BRAND.name}`}
@@ -22,7 +22,7 @@ export default function Story() {
                 loading="lazy"
               />
             </div>
-            <Reveal delay={400} className="absolute -bottom-6 -right-4 lg:-right-8 bg-white rounded-2xl p-5 shadow-xl border border-brand-gold/10">
+            <Reveal delay={400} className="absolute -bottom-6 -right-4 lg:-right-8 bg-white rounded-3xl p-5 shadow-xl border border-brand-gold/10">
               <p className="font-display text-4xl font-light text-brand-gold">100%</p>
               <p className="text-[11px] tracking-[0.15em] uppercase text-brand-ink/50 font-medium mt-1">
                 Engagement Qualité
@@ -52,7 +52,7 @@ export default function Story() {
                   key={t.year}
                   from="right"
                   delay={i * 100}
-                  className="flex items-center gap-4 bg-white rounded-xl p-4 border border-brand-gold/8"
+                  className="flex items-center gap-4 bg-white rounded-2xl p-4 border border-brand-gold/8"
                 >
                   <span className="font-display text-lg font-semibold text-brand-gold w-12 flex-shrink-0">{t.year}</span>
                   <span className="text-[13px] text-brand-ink/65 font-light">{t.event}</span>

@@ -14,7 +14,7 @@ const NAV_LINKS = [
 function Brand() {
   return (
     <a href="#top" className="flex items-center gap-2.5 group">
-      <div className="h-11 w-11 rounded-lg bg-white p-0.5 ring-1 ring-brand-gold/30 flex items-center justify-center">
+      <div className="h-11 w-11 rounded-xl bg-white p-0.5 ring-1 ring-brand-gold/30 flex items-center justify-center">
         <img
           src={LOGO}
           alt={`${BRAND.name} ${BRAND.tagline}`}
@@ -52,40 +52,41 @@ export default function Navbar() {
 
   return (
     <>
-      {/* PC : navbar fixe, toujours visible, centrée verticalement, pas d'espace transparent au-dessus. */}
+      {/* PC : navbar fixe, layout 3 colonnes strictes (logo | nav centrée | CTA unique),
+          pas d'espace transparent au-dessus, pas de chevauchement. */}
       <header className="hidden lg:block fixed top-0 left-0 right-0 z-50 bg-white border-b border-brand-gold/15">
-        <div className="max-w-7xl mx-auto px-4 sm:px-5 lg:px-10">
-          <div className="grid grid-cols-[1fr_auto_1fr] items-center h-[72px] gap-3">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="grid grid-cols-[auto_1fr_auto] items-center h-[76px] gap-8">
             {/* Gauche : Brand */}
             <div className="flex items-center justify-start">
               <Brand />
             </div>
 
-            {/* Centre : navigation principale */}
+            {/* Centre : navigation principale, centrée horizontalement */}
             <nav
-              className="flex items-center gap-1"
+              className="flex items-center justify-center gap-1"
               aria-label="Navigation principale"
             >
               {NAV_LINKS.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
-                  className="px-4 py-2 rounded-full text-[13px] font-medium tracking-wide transition-all duration-200 text-brand-ink/70 hover:bg-brand-gold/10 hover:text-brand-gold"
+                  className="px-3.5 py-2 rounded-full text-[13px] font-medium tracking-wide transition-all duration-200 text-brand-ink/70 hover:bg-brand-gold/10 hover:text-brand-gold"
                 >
                   {link.label}
                 </a>
               ))}
             </nav>
 
-            {/* Droite : CTA */}
+            {/* Droite : icône téléphone + CTA consultation, symétriques à droite */}
             <div className="flex items-center justify-end gap-3">
               <a
                 href={`tel:${BRAND.phones[1].tel}`}
                 aria-label={`Appeler ${BRAND.phones[1].name}`}
-                className="flex items-center gap-2 px-4 py-2.5 bg-white text-brand-ink text-[12px] tracking-[0.12em] uppercase font-semibold rounded-full border border-brand-gold/30 hover:bg-brand-gold/10 hover:border-brand-gold/60 transition-all duration-300"
+                title={`Appeler ${BRAND.phones[1].name}`}
+                className="h-10 w-10 flex items-center justify-center rounded-full bg-brand-cream border border-brand-gold/30 text-brand-gold hover:bg-brand-gold hover:text-white hover:border-brand-gold transition-all duration-300"
               >
-                <Phone className="w-4 h-4 text-brand-gold" aria-hidden="true" />
-                <span>Appeler</span>
+                <Phone className="w-4 h-4" aria-hidden="true" />
               </a>
               <DesktopCTA />
             </div>
@@ -106,7 +107,7 @@ export default function Navbar() {
           {/* Header compact — pas d'espace transparent au-dessus */}
           <div className="flex items-center justify-between px-4 h-14 border-b border-gray-100 flex-shrink-0">
             <div className="flex items-center gap-2.5 min-w-0">
-              <div className="h-9 w-9 rounded-lg bg-white p-0.5 ring-1 ring-brand-gold/30 flex items-center justify-center flex-shrink-0">
+              <div className="h-9 w-9 rounded-xl bg-white p-0.5 ring-1 ring-brand-gold/30 flex items-center justify-center flex-shrink-0">
                 <img src={LOGO} alt="" className="h-full w-full object-contain" />
               </div>
               <span className="font-display text-base tracking-wide text-brand-ink font-semibold truncate">
@@ -134,7 +135,7 @@ export default function Navbar() {
                   href={link.href}
                   onClick={closeMenu}
                   style={{ animationDelay: `${i * 40}ms` }}
-                  className="mm-link flex items-center justify-center text-center min-h-[64px] px-3 py-3 bg-brand-cream/40 hover:bg-brand-gold/10 border border-brand-gold/15 hover:border-brand-gold/40 rounded-2xl font-display text-base font-light text-brand-ink hover:text-brand-gold transition-all duration-200"
+                  className="mm-link flex items-center justify-center text-center min-h-[64px] px-3 py-3 bg-brand-cream/40 hover:bg-brand-gold/10 border border-brand-gold/15 hover:border-brand-gold/40 rounded-3xl font-display text-base font-light text-brand-ink hover:text-brand-gold transition-all duration-200"
                 >
                   {link.label}
                 </a>
@@ -143,7 +144,7 @@ export default function Navbar() {
                 href="#contact"
                 onClick={closeMenu}
                 style={{ animationDelay: `${NAV_LINKS.length * 40}ms` }}
-                className="mm-link col-span-2 flex items-center justify-center text-center min-h-[64px] px-3 py-3 bg-brand-gold text-white hover:bg-brand-goldLight rounded-2xl font-display text-base font-medium tracking-wide transition-all duration-200"
+                className="mm-link col-span-2 flex items-center justify-center text-center min-h-[64px] px-3 py-3 bg-brand-gold text-white hover:bg-brand-goldLight rounded-3xl font-display text-base font-medium tracking-wide transition-all duration-200"
               >
                 Contact
               </a>
@@ -155,14 +156,14 @@ export default function Navbar() {
             <div className="grid grid-cols-3 gap-2">
               <a
                 href={`tel:${BRAND.phones[1].tel}`}
-                className="flex flex-col items-center justify-center gap-1.5 min-h-[72px] py-2 bg-brand-cream/40 border border-brand-gold/20 rounded-2xl hover:bg-brand-gold/10 active:scale-95 transition-all"
+                className="flex flex-col items-center justify-center gap-1.5 min-h-[72px] py-2 bg-brand-cream/40 border border-brand-gold/20 rounded-3xl hover:bg-brand-gold/10 active:scale-95 transition-all"
               >
                 <Phone className="w-5 h-5 text-brand-gold" aria-hidden="true" />
                 <span className="text-[10px] tracking-[0.12em] uppercase font-semibold text-brand-ink">Appeler</span>
               </a>
               <a
                 href={`mailto:${BRAND.email}`}
-                className="flex flex-col items-center justify-center gap-1.5 min-h-[72px] py-2 bg-brand-cream/40 border border-brand-gold/20 rounded-2xl hover:bg-brand-gold/10 active:scale-95 transition-all"
+                className="flex flex-col items-center justify-center gap-1.5 min-h-[72px] py-2 bg-brand-cream/40 border border-brand-gold/20 rounded-3xl hover:bg-brand-gold/10 active:scale-95 transition-all"
               >
                 <Mail className="w-5 h-5 text-brand-gold" aria-hidden="true" />
                 <span className="text-[10px] tracking-[0.12em] uppercase font-semibold text-brand-ink">Email</span>
@@ -170,7 +171,7 @@ export default function Navbar() {
               <a
                 href="#contact"
                 onClick={closeMenu}
-                className="flex flex-col items-center justify-center gap-1.5 min-h-[72px] py-2 bg-brand-gold text-white rounded-2xl hover:bg-brand-goldLight active:scale-95 transition-all"
+                className="flex flex-col items-center justify-center gap-1.5 min-h-[72px] py-2 bg-brand-gold text-white rounded-3xl hover:bg-brand-goldLight active:scale-95 transition-all"
               >
                 <X className="w-5 h-5 hidden" aria-hidden="true" />
                 <span className="w-5 h-5 flex items-center justify-center text-lg font-semibold leading-none" aria-hidden="true">→</span>

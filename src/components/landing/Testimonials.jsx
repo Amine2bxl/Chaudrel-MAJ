@@ -91,7 +91,7 @@ export default function Testimonials() {
           </Reveal>
 
           <Reveal from="fade">
-            <div className="flex items-center gap-5 bg-brand-cream rounded-2xl px-6 py-5 border border-brand-gold/10">
+            <div className="flex items-center gap-5 bg-brand-cream rounded-3xl px-6 py-5 border border-brand-gold/10">
               <div className="text-center">
                 <p className="font-display text-4xl font-light text-brand-ink">5.0</p>
                 <Stars />
@@ -117,7 +117,7 @@ export default function Testimonials() {
               key={t.name}
               delay={i * 70}
               margin="-30px"
-              className="bg-brand-cream hover:bg-white border border-brand-gold/0 hover:border-brand-gold/12 hover:shadow-lg rounded-2xl p-4 sm:p-6 transition-all duration-400"
+              className="bg-brand-cream hover:bg-white border border-brand-gold/0 hover:border-brand-gold/12 hover:shadow-lg rounded-3xl p-4 sm:p-6 transition-all duration-400"
             >
               <div className="flex items-center justify-between mb-4">
                 <Stars count={t.rating} />

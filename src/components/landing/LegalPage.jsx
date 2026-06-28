@@ -3,9 +3,9 @@ import { BRAND, LOGO } from '@/lib/content';
 
 function Section({ icon: Icon, title, children }) {
   return (
-    <section className="group rounded-3xl border border-brand-gold/12 bg-white/75 backdrop-blur-sm p-6 sm:p-8 shadow-[0_18px_60px_rgba(17,17,17,0.05)] hover:border-brand-gold/20 transition-colors">
+    <section className="group rounded-[2rem] border border-brand-gold/12 bg-white/75 backdrop-blur-sm p-6 sm:p-8 shadow-[0_18px_60px_rgba(17,17,17,0.05)] hover:border-brand-gold/20 transition-colors">
       <div className="flex items-start gap-4">
-        <div className="h-12 w-12 rounded-2xl bg-brand-gold/10 border border-brand-gold/15 flex items-center justify-center text-brand-gold flex-shrink-0">
+        <div className="h-12 w-12 rounded-3xl bg-brand-gold/10 border border-brand-gold/15 flex items-center justify-center text-brand-gold flex-shrink-0">
           <Icon className="h-5 w-5" aria-hidden="true" />
         </div>
         <div className="min-w-0">
@@ -19,8 +19,8 @@ function Section({ icon: Icon, title, children }) {
 
 function InfoCard({ title, value, icon: Icon }) {
   return (
-    <div className="rounded-2xl border border-brand-gold/12 bg-white/75 backdrop-blur-sm p-4 sm:p-5 flex items-start gap-3">
-      <div className="h-10 w-10 rounded-xl bg-brand-gold/10 border border-brand-gold/15 flex items-center justify-center text-brand-gold flex-shrink-0">
+    <div className="rounded-3xl border border-brand-gold/12 bg-white/75 backdrop-blur-sm p-4 sm:p-5 flex items-start gap-3">
+      <div className="h-10 w-10 rounded-2xl bg-brand-gold/10 border border-brand-gold/15 flex items-center justify-center text-brand-gold flex-shrink-0">
         <Icon className="h-4.5 w-4.5" aria-hidden="true" />
       </div>
       <div>
@@ -52,7 +52,7 @@ export default function LegalPage({
           <div className="max-w-7xl mx-auto px-4 sm:px-5 lg:px-10">
             <div className="flex items-center justify-between h-14 lg:h-[72px]">
               <a href="/" className="flex items-center gap-2.5 group">
-                <div className="h-11 w-11 rounded-lg bg-white p-0.5 ring-1 ring-brand-gold/30 flex items-center justify-center">
+                <div className="h-11 w-11 rounded-xl bg-white p-0.5 ring-1 ring-brand-gold/30 flex items-center justify-center">
                   <img src={LOGO} alt={`${BRAND.name} ${BRAND.tagline}`} className="h-full w-full object-contain" width="44" height="44" />
                 </div>
                 <span className="flex flex-col leading-none">
@@ -116,7 +116,7 @@ export default function LegalPage({
           </div>
 
           <aside className="sticky top-24 space-y-4">
-            <div className="rounded-3xl border border-brand-gold/12 bg-[#0E0E0E] text-white p-6 shadow-[0_18px_60px_rgba(17,17,17,0.12)]">
+            <div className="rounded-[2rem] border border-brand-gold/12 bg-[#0E0E0E] text-white p-6 shadow-[0_18px_60px_rgba(17,17,17,0.12)]">
               <p className="text-[10px] tracking-[0.22em] uppercase text-brand-goldLight font-semibold mb-3">Contact rapide</p>
               <h2 className="font-display text-3xl font-light leading-tight mb-4">Besoin d'un échange avant lecture ?</h2>
               <p className="text-white/55 text-sm leading-7 font-light mb-6">
@@ -126,7 +126,7 @@ export default function LegalPage({
                 <Mail className="h-4 w-4" /> Nous écrire
               </a>
             </div>
-            <div className="rounded-3xl border border-brand-gold/12 bg-white/75 p-6">
+            <div className="rounded-[2rem] border border-brand-gold/12 bg-white/75 p-6">
               <p className="text-[10px] tracking-[0.22em] uppercase text-brand-gold font-semibold mb-3">Coordonnées</p>
               <div className="space-y-3 text-sm text-brand-ink/75 font-light">
                 <p className="flex items-center gap-2"><Mail className="h-4 w-4 text-brand-gold" /> {BRAND.email}</p>

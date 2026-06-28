@@ -106,6 +106,15 @@ export const IMAGES = {
       image:
         'https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=1200&q=80',
     },
+    {
+      id: 'nettoyage',
+      title: 'Nettoyage',
+      subtitle: 'Finition Impeccable',
+      description:
+        "Service de nettoyage de fin de chantier et d'entretien haut de gamme à Bruxelles — dépoussiérage minutieux, nettoyage des vitres, traitement des sols, désinfection des sanitaires et remise au propre complète avant la livraison. Un chantier rendu clé en main, prêt à habiter.",
+      image:
+        'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80',
+    },
   ],
   portfolio: [
     {

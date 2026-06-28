@@ -17,7 +17,7 @@ function Slider({ before, after, label, type, location }) {
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-[420px] lg:h-[560px] overflow-hidden cursor-ew-resize select-none rounded-3xl bg-brand-ink"
+      className="relative w-full h-[420px] lg:h-[560px] overflow-hidden cursor-ew-resize select-none rounded-[2rem] bg-brand-ink"
       onMouseDown={(e) => { dragging.current = true; calcPos(e.clientX); }}
       onMouseMove={(e) => { if (dragging.current) calcPos(e.clientX); }}
       onMouseUp={() => { dragging.current = false; }}
