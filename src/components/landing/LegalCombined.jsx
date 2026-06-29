@@ -357,9 +357,9 @@ export default function LegalCombined() {
                 <div className="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-8 lg:gap-10 items-end">
                   <div>
                     <p className="text-[11px] tracking-[0.25em] uppercase text-brand-gold font-semibold mb-4">Informations légales</p>
-                    <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-light text-brand-ink leading-[1.05] mb-5 max-w-2xl">
+                    <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light text-brand-ink leading-[1.05] mb-5 max-w-2xl">
                       Politiques &amp; Mentions légales
-                    </h1>
+                    </h2>
                     <p className="text-[15px] sm:text-base lg:text-lg text-brand-ink/70 font-light leading-[1.9] max-w-2xl">
                       Identité officielle de l'éditeur (BCE / BNB), activité, hébergeur, propriété intellectuelle,
                       ainsi que notre politique de traitement des données personnelles (RGPD).

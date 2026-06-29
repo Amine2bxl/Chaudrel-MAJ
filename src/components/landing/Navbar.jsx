@@ -108,7 +108,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between px-4 h-14 border-b border-gray-100 flex-shrink-0">
             <div className="flex items-center gap-2.5 min-w-0">
               <div className="h-9 w-9 rounded-xl bg-white p-0.5 ring-1 ring-brand-gold/30 flex items-center justify-center flex-shrink-0">
-                <img src={LOGO} alt="" className="h-full w-full object-contain" />
+                <img src={LOGO} alt="Chaudrel Rénovation - logo" className="h-full w-full object-contain" />
               </div>
               <span className="font-display text-base tracking-wide text-brand-ink font-semibold truncate">
                 {BRAND.name.toUpperCase()}

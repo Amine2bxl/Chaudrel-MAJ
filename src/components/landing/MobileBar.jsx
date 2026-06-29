@@ -43,7 +43,7 @@ export default function MobileBar() {
           className="flex items-center gap-2.5 group min-w-0"
         >
           <div className="h-10 w-10 rounded-xl bg-white p-0.5 ring-1 ring-brand-gold/30 flex items-center justify-center flex-shrink-0">
-            <img src={LOGO} alt="" className="h-full w-full object-contain" />
+            <img src={LOGO} alt="Chaudrel Rénovation - logo" className="h-full w-full object-contain" />
           </div>
           <span className="flex flex-col leading-none min-w-0">
             <span className="font-display text-[15px] tracking-[0.1em] font-semibold text-brand-ink truncate">
