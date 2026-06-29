@@ -40,10 +40,14 @@ export default function Story() {
               <span className="italic text-brand-gold">Passion & Rigueur</span>
             </h2>
             <p className="text-[15px] text-brand-ink/60 font-light leading-[1.85] mb-6">
-              Chaudrel Rénovation est née d'une conviction profonde : la rénovation ne se limite pas à refaire des murs — c'est l'art de réinventer un espace pour qu'il reflète qui vous êtes.
+              Chaudrel Rénovation est née d'une conviction profonde : aménager une cuisine, une salle de bain ou une toiture avec soin et expertise.
             </p>
             <p className="text-[15px] text-brand-ink/60 font-light leading-[1.85] mb-6">
-              Fondée par <strong className="text-brand-ink/80 font-medium">Alberto et Matteo</strong>, deux artisans passionnés, notre entreprise s'est forgée une réputation d'excellence en alliant savoir-faire artisanal et vision contemporaine. Chaque projet est un engagement personnel.
+              Fondée par <strong className="text-brand-ink/80 font-medium">Alberto et Matteo</strong>, deux artisans passionnés, notre entreprise s'est forgée une réputation d'excellence reconnue par nos <a href="#testimonials" className="text-brand-gold underline decoration-brand-gold/30 hover:decoration-brand-gold transition-colors">clients à Bruxelles et en Belgique</a>. Chaque projet est un engagement personnel.
+            </p>
+
+            <p className="text-[15px] text-brand-ink/60 font-light leading-[1.85] mb-6">
+              Du premier croquis à la livraison, nous mettons le même soin à <a href="#services" className="text-brand-gold underline decoration-brand-gold/30 hover:decoration-brand-gold transition-colors">aménager une cuisine, une salle de bain ou une toiture</a> qu'à <a href="#portfolio" className="text-brand-gold underline decoration-brand-gold/30 hover:decoration-brand-gold transition-colors">révéler le potentiel de chaque espace</a>.
             </p>
 
             <div className="space-y-3 mb-8">

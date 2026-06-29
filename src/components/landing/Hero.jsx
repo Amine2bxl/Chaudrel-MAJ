@@ -11,9 +11,6 @@ const STATS = [
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col justify-end overflow-hidden">
-      <h1 className="sr-only">
-        Chaudrel Rénovation — Entreprise de rénovation haut de gamme à Bruxelles et en Belgique
-      </h1>
       <div className="absolute inset-0 hero-kenburns">
         <img
           src={IMAGES.hero}

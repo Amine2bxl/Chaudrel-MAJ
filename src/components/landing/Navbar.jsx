@@ -17,7 +17,7 @@ function Brand() {
       <div className="h-11 w-11 rounded-xl bg-white p-0.5 ring-1 ring-brand-gold/30 flex items-center justify-center">
         <img
           src={LOGO}
-          alt={`${BRAND.name} ${BRAND.tagline}`}
+          alt={`Logo ${BRAND.name} — entreprise de réno`}
           className="h-full w-full object-contain"
           width="44"
           height="44"
