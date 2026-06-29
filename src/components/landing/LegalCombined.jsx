@@ -263,7 +263,7 @@ function LegalBody() {
 }
 
 export default function LegalCombined() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   useEffect(() => {
     // Ouvre via le bouton du footer

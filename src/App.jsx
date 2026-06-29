@@ -1,4 +1,3 @@
-import { lazy, Suspense } from 'react';
 import { MenuProvider } from '@/lib/menu-context';
 
 // Above the fold — chargés immédiatement
@@ -7,17 +6,17 @@ import MobileBar from '@/components/landing/MobileBar';
 import Hero from '@/components/landing/Hero';
 
 // Below the fold — lazy loading pour booster le LCP mobile
-const SocialProof = lazy(() => import('@/components/landing/SocialProof'));
-const Services = lazy(() => import('@/components/landing/Services'));
-const Portfolio = lazy(() => import('@/components/landing/Portfolio'));
-const BeforeAfter = lazy(() => import('@/components/landing/BeforeAfter'));
-const Story = lazy(() => import('@/components/landing/Story'));
-const Benefits = lazy(() => import('@/components/landing/Benefits'));
-const Testimonials = lazy(() => import('@/components/landing/Testimonials'));
-const FAQ = lazy(() => import('@/components/landing/FAQ'));
-const CTA = lazy(() => import('@/components/landing/CTA'));
-const Footer = lazy(() => import('@/components/landing/Footer'));
-const LegalCombined = lazy(() => import('@/components/landing/LegalCombined'));
+import SocialProof from '@/components/landing/SocialProof';
+import Services from '@/components/landing/Services';
+import Portfolio from '@/components/landing/Portfolio';
+import BeforeAfter from '@/components/landing/BeforeAfter';
+import Story from '@/components/landing/Story';
+import Benefits from '@/components/landing/Benefits';
+import Testimonials from '@/components/landing/Testimonials';
+import FAQ from '@/components/landing/FAQ';
+import CTA from '@/components/landing/CTA';
+import Footer from '@/components/landing/Footer';
+import LegalCombined from '@/components/landing/LegalCombined';
 
 export default function App() {
   return (
@@ -27,22 +26,18 @@ export default function App() {
         <MobileBar />
         <main>
           <Hero />
-          <Suspense fallback={null}>
-            <SocialProof />
-            <Services />
-            <Portfolio />
-            <BeforeAfter />
-            <Story />
-            <Benefits />
-            <Testimonials />
-            <FAQ />
-            <CTA />
-          </Suspense>
+          <SocialProof />
+          <Services />
+          <Portfolio />
+          <BeforeAfter />
+          <Story />
+          <Benefits />
+          <Testimonials />
+          <FAQ />
+          <CTA />
         </main>
-        <Suspense fallback={null}>
-          <Footer />
-          <LegalCombined />
-        </Suspense>
+        <Footer />
+        <LegalCombined />
       </div>
     </MenuProvider>
   );
