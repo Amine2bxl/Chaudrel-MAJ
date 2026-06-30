@@ -67,6 +67,8 @@ export const IMAGES = {
       subtitle: "L'Art Culinaire",
       description:
         "Rénovation de cuisine haut de gamme à Bruxelles — plans de travail en marbre de Carrare, façades en bois massif, îlot central sur mesure. Chaudrel conçoit des cuisines fonctionnelles et élégantes qui valorisent votre bien immobilier.",
+      shortDescription:
+        "Cuisines sur mesure en marbre de Carrare et bois massif — conception et pose clé en main à Bruxelles.",
       image:
         'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1200&q=80',
     },
@@ -76,6 +78,8 @@ export const IMAGES = {
       subtitle: 'Sanctuaire Privé',
       description:
         "Rénovation complète de salle de bain à Bruxelles et périphérie — douche italienne, baignoire îlot, carrelage grand format en pierre naturelle, robinetterie premium. Un espace spa sur mesure pour votre quotidien.",
+      shortDescription:
+        "Douche italienne, baignoire îlot, pierre naturelle — votre salle de bain spa sur mesure.",
       image:
         'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=80',
     },
@@ -85,6 +89,8 @@ export const IMAGES = {
       subtitle: "Paysage d'Exception",
       description:
         "Aménagement paysager et rénovation d'extérieur en région bruxelloise — terrasse en pierre bleue belge, allée drainante, éclairage basse tension et espaces de vie outdoor clé en main. Expertise locale depuis 2009.",
+      shortDescription:
+        "Terrasse en pierre bleue, allée drainante, éclairage basse tension — extérieur clé en main.",
       image:
         'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
     },
@@ -94,6 +100,8 @@ export const IMAGES = {
       subtitle: 'Protection & Noblesse',
       description:
         "Rénovation de toiture à Bruxelles — pose d'ardoise naturelle, zinc à joint debout, membrane EPDM, isolation thermique conforme aux normes PEB. Devis gratuit, garantie décennale, intervention rapide.",
+      shortDescription:
+        "Ardoise, zinc à joint debout, isolation PEB — toiture durable garantie décennale.",
       image:
         'https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=1200&q=80',
     },
@@ -103,6 +111,8 @@ export const IMAGES = {
       subtitle: 'Oasis Privée',
       description:
         "Construction et rénovation de piscine privée à Bruxelles — piscine à débordement, liner sur mesure, pompe à chaleur, carrelage mosaïque ou pierre naturelle. Intégration paysagère soignée pour une valeur ajoutée durable.",
+      shortDescription:
+        "Piscine à débordement, mosaïque, pompe à chaleur — valeur ajoutée durable.",
       image:
         'https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=1200&q=80',
     },
@@ -112,6 +122,8 @@ export const IMAGES = {
       subtitle: 'Finition Impeccable',
       description:
         "Service de nettoyage de fin de chantier et d'entretien haut de gamme à Bruxelles — dépoussiérage minutieux, nettoyage des vitres, traitement des sols, désinfection des sanitaires et remise au propre complète avant la livraison. Un chantier rendu clé en main, prêt à habiter.",
+      shortDescription:
+        "Nettoyage de fin de chantier haut de gamme — livraison prête à habiter.",
       image:
         'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80',
     },

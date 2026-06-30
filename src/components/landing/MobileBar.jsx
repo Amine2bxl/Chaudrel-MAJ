@@ -50,7 +50,7 @@ export default function MobileBar() {
               {BRAND.name.toUpperCase()}
             </span>
             <span className="text-[8px] tracking-[0.2em] uppercase text-brand-gold font-medium mt-0.5 truncate">
-              {BRAND.tagline}
+              Navigation mobile
             </span>
           </span>
         </a>

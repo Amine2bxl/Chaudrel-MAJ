@@ -85,8 +85,9 @@ export default function Services() {
           </div>
         </div>
 
-        {/* Mobile : cartes empilées */}
-        <div className="lg:hidden space-y-8">
+        {/* Mobile : cartes empilées. Le titre est un libellé de carte (pas un
+            titre de section, déjà couvert par le h2 ci-dessus), donc en <p>. */}
+        <div className="lg:hidden space-y-8" aria-hidden="true">
           {SERVICES.map((service, i) => (
             <Reveal key={service.id} delay={i * 100}>
               <article>
@@ -96,8 +97,8 @@ export default function Services() {
                 <p className="text-[10px] tracking-[0.2em] uppercase text-brand-gold font-medium mb-2">
                   {service.subtitle}
                 </p>
-                <h3 className="font-display text-2xl font-light text-brand-ink mb-3">{service.title}</h3>
-                <p className="text-sm text-brand-ink/60 font-light leading-relaxed">{service.description}</p>
+                <p className="font-display text-2xl font-light text-brand-ink mb-3">{service.title}</p>
+                <p className="text-sm text-brand-ink/60 font-light leading-relaxed">{service.shortDescription}</p>
               </article>
             </Reveal>
           ))}

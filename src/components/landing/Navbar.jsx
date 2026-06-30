@@ -11,24 +11,44 @@ const NAV_LINKS = [
   { label: 'FAQ', href: '#faq' },
 ];
 
-function Brand() {
+// Variante des libellés pour le menu mobile — pour différencier les ancres
+// (éviter anchor texts identiques entre Navbar desktop, Navbar mobile et Footer).
+const MOBILE_LABELS = {
+  'Services': 'Nos services',
+  'Réalisations': 'Voir nos réalisations',
+  'Notre Histoire': 'Lire notre histoire',
+  'Avis Clients': 'Tous les avis',
+  'FAQ': 'Voir la FAQ',
+};
+
+function Brand({ id = 'chaudrel-brand-desktop', variant = 'desktop' }) {
+  const isMobile = variant === 'mobile';
   return (
-    <a href="#top" className="flex items-center gap-2.5 group">
-      <div className="h-11 w-11 rounded-xl bg-white p-0.5 ring-1 ring-brand-gold/30 flex items-center justify-center">
+    <a
+      href="#top"
+      id={id}
+      className="flex items-center gap-2.5 group"
+      aria-label="Chaudrel Rénovation — retour en haut"
+    >
+      <div
+        className={`${isMobile ? 'h-9 w-9' : 'h-11 w-11'} rounded-xl bg-white p-0.5 ring-1 ring-brand-gold/30 flex items-center justify-center${isMobile ? ' flex-shrink-0' : ''}`}
+      >
         <img
           src={LOGO}
-          alt={`Logo ${BRAND.name} — entreprise de réno`}
+          alt={`Logo ${BRAND.name} — entreprise de rénovation`}
           className="h-full w-full object-contain"
-          width="44"
-          height="44"
+          width={isMobile ? 36 : 44}
+          height={isMobile ? 36 : 44}
         />
       </div>
-      <span className="flex flex-col leading-none">
-        <span className="font-display tracking-[0.1em] font-semibold text-brand-ink text-lg lg:text-xl">
+      <span className={`flex flex-col leading-none ${isMobile ? 'min-w-0' : ''}`}>
+        <span
+          className={`font-display tracking-[0.1em] font-semibold text-brand-ink ${isMobile ? 'text-base truncate' : 'text-lg lg:text-xl'}`}
+        >
           {BRAND.name.toUpperCase()}
         </span>
         <span className="text-[9px] tracking-[0.2em] uppercase text-brand-gold font-medium">
-          {BRAND.tagline}
+          {isMobile ? 'Menu principal' : BRAND.tagline}
         </span>
       </span>
     </a>
@@ -106,14 +126,7 @@ export default function Navbar() {
         >
           {/* Header compact — pas d'espace transparent au-dessus */}
           <div className="flex items-center justify-between px-4 h-14 border-b border-gray-100 flex-shrink-0">
-            <div className="flex items-center gap-2.5 min-w-0">
-              <div className="h-9 w-9 rounded-xl bg-white p-0.5 ring-1 ring-brand-gold/30 flex items-center justify-center flex-shrink-0">
-                <img src={LOGO} alt="Chaudrel Rénovation - logo" className="h-full w-full object-contain" />
-              </div>
-              <span className="font-display text-base tracking-wide text-brand-ink font-semibold truncate">
-                {BRAND.name.toUpperCase()}
-              </span>
-            </div>
+            <Brand variant="mobile" id="chaudrel-brand-mobile" />
             <button
               onClick={closeMenu}
               className="h-10 w-10 flex items-center justify-center rounded-full bg-brand-ink text-white active:scale-95 transition-transform flex-shrink-0"
@@ -137,7 +150,7 @@ export default function Navbar() {
                   style={{ animationDelay: `${i * 40}ms` }}
                   className="mm-link flex items-center justify-center text-center min-h-[64px] px-3 py-3 bg-brand-cream/40 hover:bg-brand-gold/10 border border-brand-gold/15 hover:border-brand-gold/40 rounded-3xl font-display text-base font-light text-brand-ink hover:text-brand-gold transition-all duration-200"
                 >
-                  {link.label}
+                  {MOBILE_LABELS[link.label] || link.label}
                 </a>
               ))}
               <a

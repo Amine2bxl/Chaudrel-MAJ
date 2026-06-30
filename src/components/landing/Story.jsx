@@ -47,7 +47,7 @@ export default function Story() {
             </p>
 
             <p className="text-[15px] text-brand-ink/60 font-light leading-[1.85] mb-6">
-              Du premier croquis à la livraison, nous mettons le même soin à <a href="#services" className="text-brand-gold underline decoration-brand-gold/30 hover:decoration-brand-gold transition-colors">aménager une cuisine, une salle de bain ou une toiture</a> qu'à <a href="#portfolio" className="text-brand-gold underline decoration-brand-gold/30 hover:decoration-brand-gold transition-colors">révéler le potentiel de chaque espace</a>.
+              Du premier croquis à la livraison, nous mettons le même <a href="#services" className="text-brand-gold underline decoration-brand-gold/30 hover:decoration-brand-gold transition-colors">savoir-faire sur chacun de nos chantiers</a> qu'à <a href="#portfolio" className="text-brand-gold underline decoration-brand-gold/30 hover:decoration-brand-gold transition-colors">révéler le potentiel de chaque espace</a>.
             </p>
 
             <div className="space-y-3 mb-8">

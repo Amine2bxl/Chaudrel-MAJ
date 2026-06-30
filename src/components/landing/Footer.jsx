@@ -18,11 +18,11 @@ function TikTokIcon({ className }) {
 
 const SERVICES = ['Cuisine', 'Salle de Bain', 'Jardin & Extérieur', 'Toiture', 'Piscine', 'Rénovation Complète'];
 const COMPANY_LINKS = [
-  { label: 'Notre Histoire', href: '#story' },
-  { label: 'Réalisations', href: '#portfolio' },
-  { label: 'Avis Clients', href: '#testimonials' },
-  { label: 'FAQ', href: '#faq' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Découvrir notre histoire', href: '#story' },
+  { label: 'Toutes nos réalisations', href: '#portfolio' },
+  { label: 'Lire les avis', href: '#testimonials' },
+  { label: 'Questions fréquentes', href: '#faq' },
+  { label: 'Nous contacter', href: '#contact' },
 ];
 const SOCIALS = [
   { href: BRAND.socials.instagram, Icon: Instagram, label: 'Instagram' },
