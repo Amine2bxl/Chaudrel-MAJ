@@ -100,10 +100,14 @@ export default function Navbar() {
 
             {/* Droite : icône téléphone + CTA consultation, symétriques à droite */}
             <div className="flex items-center justify-end gap-3">
+              {/* Icône téléphone : ouvre le formulaire de contact (#contact) au lieu de l'app d'appel système,
+                  pour rester aligné avec le bouton "Consultation gratuite" juste à côté. Sur mobile, le clic
+                  pour appeler reste pertinent (voir MobileBar), mais en haut de page PC on veut centraliser
+                  toutes les demandes via le formulaire. */}
               <a
-                href={`tel:${BRAND.phones[1].tel}`}
-                aria-label={`Appeler ${BRAND.phones[1].name}`}
-                title={`Appeler ${BRAND.phones[1].name}`}
+                href="#contact"
+                aria-label="Accéder au formulaire de contact"
+                title="Demander une consultation gratuite"
                 className="h-10 w-10 flex items-center justify-center rounded-full bg-brand-cream border border-brand-gold/30 text-brand-gold hover:bg-brand-gold hover:text-white hover:border-brand-gold transition-all duration-300"
               >
                 <Phone className="w-4 h-4" aria-hidden="true" />

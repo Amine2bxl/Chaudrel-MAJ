@@ -263,6 +263,8 @@ function LegalBody() {
 }
 
 export default function LegalCombined() {
+  // Modale fermée par défaut : ouverte uniquement via l'événement du footer
+  // (`chaudrel:open-legal`) ou un lien profond (`#legal`, `window.__CHAUDREL_OPEN_LEGAL__`).
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
