@@ -4,27 +4,39 @@ import { ChevronDown } from 'lucide-react';
 const FAQS = [
   {
     q: 'Quels types de rénovations réalisez-vous ?',
-    a: "Nous intervenons sur tous types de rénovations intérieures et extérieures : cuisines, salles de bain, toitures, jardins, terrasses, piscines, façades et rénovations complètes.",
+    a: (
+      <>
+        Nous intervenons sur tous types de rénovations intérieures et extérieures : cuisines, salles de bain, toitures, jardins, terrasses, piscines, façades et rénovations complètes.
+      </>
+    ),
   },
   {
     q: 'Proposez-vous des devis gratuits ?',
-    a: "Oui, consultation gratuite et sans engagement. Nous nous déplaçons chez vous, évaluons votre projet et vous fournissons un devis détaillé et personnalisé.",
+    a: 'Oui, consultation gratuite et sans engagement. Nous nous déplaçons chez vous, évaluons votre projet et vous fournissons un devis détaillé et personnalisé.',
   },
   {
     q: 'Quels matériaux utilisez-vous ?',
-    a: "Exclusivement des matériaux haut de gamme — marbre, pierre naturelle, ardoise, bois massif, cuivre, laiton. La qualité et la durabilité sont nos priorités absolues.",
+    a: (
+      <>
+        Exclusivement des matériaux haut de gamme — marbre, pierre naturelle, ardoise, bois massif, cuivre, laiton. La qualité et la durabilité sont nos priorités absolues. Pour en savoir plus sur les matériaux de construction, consultez le centre scientifique et technique de la construction (<a href="https://www.buildwise.be" target="_blank" rel="noopener noreferrer" className="text-brand-gold underline decoration-brand-gold/40 hover:decoration-brand-gold transition-colors">Buildwise</a>).
+      </>
+    ),
   },
   {
     q: 'Quelle est votre zone d\u2019intervention ?',
-    a: "Nous intervenons partout en Belgique — Bruxelles, Anvers, Gand, Liège, Namur, Charleroi et toute la périphérie. Aucune limite géographique pour vos projets.",
+    a: 'Nous intervenons partout en Belgique — Bruxelles, Anvers, Gand, Liège, Namur, Charleroi et toute la périphérie. Aucune limite géographique pour vos projets.',
   },
   {
     q: 'Combien de temps dure une rénovation ?',
-    a: "Une cuisine prend 3 à 6 semaines, une rénovation complète 2 à 4 mois. Nous établissons un planning précis dès le départ et respectons nos délais.",
+    a: 'Une cuisine prend 3 à 6 semaines, une rénovation complète 2 à 4 mois. Nous établissons un planning précis dès le départ et respectons nos délais.',
   },
   {
     q: 'Comment se passe le suivi de chantier ?',
-    a: "Un interlocuteur dédié gère votre projet de A à Z. Vous êtes informé à chaque étape, aucune décision n'est prise sans votre accord. Zéro surprise.",
+    a: (
+      <>
+        Un interlocuteur dédié gère votre projet de A à Z. Vous êtes informé à chaque étape, aucune décision n&apos;est prise sans votre accord. Zéro surprise. Pour vos droits en tant que consommateur, référez-vous au <a href="https://www.economie.fgov.be" target="_blank" rel="noopener noreferrer" className="text-brand-gold underline decoration-brand-gold/40 hover:decoration-brand-gold transition-colors">SPF Économie belge</a>.
+      </>
+    ),
   },
 ];
 

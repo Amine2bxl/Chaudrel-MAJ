@@ -30,7 +30,11 @@ const BENEFITS = [
   {
     icon: Leaf,
     title: 'Éco-Responsable',
-    desc: "Matériaux durables, techniques respectueuses de l'environnement pour des rénovations qui durent.",
+    desc: (
+      <>
+        Matériaux durables, techniques respectueuses de l&apos;environnement pour des rénovations qui durent. Découvrez les <a href="https://energie.wallonie.be/fr/primes-et-aides-financieres.html" target="_blank" rel="noopener noreferrer" class="text-white/70 underline decoration-brand-gold/40 hover:decoration-brand-gold hover:text-white transition-colors">aides financières pour la rénovation énergétique en Wallonie</a>.
+      </>
+    ),
   },
 ];
 
