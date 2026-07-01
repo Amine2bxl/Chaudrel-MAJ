@@ -23,6 +23,10 @@ export default function Portfolio() {
           <p className="text-sm text-brand-ink/50 font-light leading-relaxed max-w-md">
             Découvrez une sélection de nos rénovations réalisées à Bruxelles et ses environs.
             Chaque chantier est mené avec rigueur, passion et un souci du détail absolu.
+            {' '}
+            <a href="#testimonials" className="text-brand-gold underline decoration-brand-gold/30 hover:decoration-brand-gold transition-colors">
+              Lire les retours de nos clients
+            </a>.
           </p>
         </Reveal>
 

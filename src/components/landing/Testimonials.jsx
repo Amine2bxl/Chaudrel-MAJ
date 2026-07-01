@@ -150,6 +150,13 @@ export default function Testimonials() {
         </div>
 
         <Reveal from="fade" className="mt-10 text-center">
+          <p className="text-sm text-brand-ink/50 font-light mb-6">
+            Vous hésitez encore ?{' '}
+            <a href="#portfolio" className="text-brand-gold underline decoration-brand-gold/30 hover:decoration-brand-gold transition-colors">
+              Parcourez d'abord nos réalisations
+            </a>
+            {' '}avant de nous contacter.
+          </p>
           <a
             href="#contact"
             className="inline-flex items-center gap-2 px-7 py-3.5 bg-brand-ink text-white text-[13px] tracking-[0.1em] uppercase font-semibold rounded-full hover:bg-brand-gold transition-all duration-300"

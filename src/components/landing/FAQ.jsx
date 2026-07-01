@@ -74,6 +74,16 @@ export default function FAQ() {
             </details>
           ))}
         </Reveal>
+
+        <Reveal from="fade" className="text-center mt-10">
+          <p className="text-[14px] text-brand-ink/55 font-light">
+            Une autre question ?{' '}
+            <a href="#contact" className="text-brand-gold underline decoration-brand-gold/30 hover:decoration-brand-gold transition-colors font-medium">
+              Contactez-nous directement
+            </a>
+            {' '}— nous répondons sous 24h.
+          </p>
+        </Reveal>
       </div>
     </section>
   );
