@@ -264,7 +264,7 @@ function LegalBody() {
 
 export default function LegalCombined() {
   // Modale fermée par défaut : ouverte uniquement via l'événement du footer
-  // (`chaudrel:open-legal`) ou un lien profond (`#legal`, `window.__CHAUDREL_OPEN_LEGAL__`).
+  // (`chaudrel:open-legal`) ou un lien profond (`#legal`, URL /legal/*).
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -272,9 +272,11 @@ export default function LegalCombined() {
     const onOpen = () => setOpen(true);
     window.addEventListener('chaudrel:open-legal', onOpen);
 
-    // Ouvre si on arrive via un lien profond (page standalone, #legal, ou flag global)
+    // Ouvre si on arrive via un lien profond (page standalone /legal/* ou #legal).
+    // Le check pathname remplace l'ancien flag global injecté en script inline,
+    // supprimé pour rester compatible avec une CSP sans 'unsafe-inline'.
     if (typeof window !== 'undefined') {
-      if (window.location.hash === '#legal' || window.__CHAUDREL_OPEN_LEGAL__ === true) {
+      if (window.location.hash === '#legal' || window.location.pathname.startsWith('/legal')) {
         setOpen(true);
       }
     }

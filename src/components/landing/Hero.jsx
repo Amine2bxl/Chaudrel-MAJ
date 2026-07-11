@@ -46,7 +46,7 @@ export default function Hero() {
 
           <p className="hero-fade hero-d3 text-sm sm:text-base lg:text-lg text-white/60 font-light leading-relaxed max-w-lg mb-6 sm:mb-8 lg:mb-10">
             Chaudrel transforme votre maison en chef-d'œuvre. Cuisine, salle de bain,
-            <a href="#services">jardin</a>, <a href="#portfolio">toiture</a> — chaque détail, chaque matériau, chaque finition reflète
+            <a href="#services">jardin</a>, <a href="#services">toiture</a> — chaque détail, chaque matériau, chaque finition reflète
             l'excellence bruxelloise.{' '}
             <a href="#story" className="text-white/85 underline decoration-white/20 hover:decoration-white/60 transition-colors">
               Découvrez notre histoire

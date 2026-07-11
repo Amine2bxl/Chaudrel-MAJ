@@ -2,7 +2,7 @@
 // Stratégie : network-first pour le HTML, cache-first pour les assets statiques.
 // Permet d'installer la PWA + fonctionnement offline basique.
 
-const CACHE_VERSION = 'chaudrel-v1';
+const CACHE_VERSION = 'chaudrel-v2';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
@@ -11,7 +11,7 @@ const STATIC_ASSETS = [
   '/apple-touch-icon.png',
   '/icon-192.png',
   '/icon-512.png',
-  '/chaudrel-logo.jpg',
+  '/chaudrel-logo.webp',
 ];
 
 // Install : pré-cache le shell

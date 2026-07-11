@@ -96,20 +96,16 @@ function buildPage({ entryPath, pageTitle, pageDescription, canonicalPath, baseH
     .replace(/<meta property="og:url" content="[^"]*"\s*\/>/, '<meta property="og:url" content="https://chaudrel.be' + canonicalPath + '" />')
     .replace(/<meta name="twitter:title" content="[^"]*"\s*\/>/, '<meta name="twitter:title" content="' + pageTitle + '" />')
     .replace(/<meta name="twitter:description" content="[^"]*"\s*\/>/, '<meta name="twitter:description" content="' + pageDescription + '" />')
-    .replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, '')
+    .replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/g, '')
     .replace(/<div id="root"[^>]*>[\s\S]*?<\/div>/, '<div id="root" data-ssr>' + renderedHtml + '</div>')
     .replace(
       /<script type="module" src="\/src\/main\.jsx"><\/script>/,
       '<script type="module" src="' + baseHref + 'assets/' + jsEntry + '"></script>'
     )
-    .replace(/<\/body>/, [
-      '<script>',
-      '  // Force l\'ouverture de la modale légale au chargement de la page standalone',
-      '  window.__CHAUDREL_OPEN_LEGAL__ = true;',
-      '</script>',
-      '</body>',
-    ].join('\n'))
     .replace(/(href|src)="\//g, '$1="' + baseHref);
+  // Note : l'ouverture de la modale sur la page standalone est déclenchée par
+  // LegalCombined via window.location.pathname (/legal/*) — plus de script inline,
+  // la CSP peut donc rester sans 'unsafe-inline' pour script-src.
 
   return template;
 }
@@ -120,14 +116,15 @@ function main() {
 
   const sourceIndexPath = resolve(root, 'index.html');
   const cssFile = readFileSync(indexPath, 'utf8').match(/href="(\/assets\/index-[^"]+\.css)"/)?.[1];
+  if (!cssFile) fail('Feuille de style buildée introuvable dans dist/index.html.');
 
+  // Le template source ne contient aucun <link rel="stylesheet"> (Vite l'injecte
+  // au build) : on insère donc le CSS buildé explicitement avant </head>.
   let template = readFileSync(sourceIndexPath, 'utf8');
-  if (cssFile) {
-    template = template.replace(
-      /<link rel="stylesheet" href="[^"]*" \/>/,
-      '<link rel="stylesheet" href="' + cssFile + '" />'
-    );
-  }
+  template = template.replace(
+    '</head>',
+    '    <link rel="stylesheet" href="' + cssFile + '" />\n  </head>'
+  );
 
   const jsEntry = findJsEntry();
 
@@ -136,7 +133,7 @@ function main() {
       entryPath: resolve(root, 'src/components/landing/LegalCombined.jsx'),
       pageTitle: 'Politiques & Mentions légales — Chaudrel',
       pageDescription: "Identité officielle de Chaudrel Rénovation SRL (BCE / BNB), hébergeur, propriété intellectuelle, et politique de traitement des données personnelles (RGPD).",
-      canonicalPath: '/legal/politique-mentions.html',
+      canonicalPath: '/legal/politique-mentions',
       output: 'legal/politique-mentions.html',
     },
   ];

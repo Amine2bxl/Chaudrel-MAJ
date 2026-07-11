@@ -184,7 +184,6 @@ function ContactForm() {
     <form
       onSubmit={handleSubmit}
       className="bg-white/5 border border-white/10 rounded-[2rem] p-5 sm:p-7 lg:p-8 space-y-4 sm:space-y-5"
-      noValidate
     >
       {/* Grille interne 2 col (md+) — symétrie parfaite sur tablette ET PC.
           Mobile (grid-cols-1) empile proprement. Chaque ligne interne est une paire ou un col-span-2 explicite. */}

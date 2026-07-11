@@ -5,7 +5,7 @@ import Navbar from '@/components/landing/Navbar';
 import MobileBar from '@/components/landing/MobileBar';
 import Hero from '@/components/landing/Hero';
 
-// Below the fold — lazy loading pour booster le LCP mobile
+// Below the fold — imports statiques (bundle unique ; le prerender SSR couvre le SEO)
 import SocialProof from '@/components/landing/SocialProof';
 import Services from '@/components/landing/Services';
 import Portfolio from '@/components/landing/Portfolio';
