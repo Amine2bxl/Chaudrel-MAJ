@@ -40,11 +40,13 @@
     <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
     <link rel="shortcut icon" href="/favicon.ico" />
 
-    <!-- Preload LCP image (Hero) -->
+    <!-- Preload LCP image (Hero, auto-hébergée, responsive) -->
     <link
       rel="preload"
       as="image"
-      href="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80"
+      href="/photos/hero-villa-1920.webp"
+      imagesrcset="/photos/hero-villa-960.webp 960w, /photos/hero-villa-1440.webp 1440w, /photos/hero-villa-1920.webp 1920w"
+      imagesizes="100vw"
       fetchpriority="high"
     />
 
