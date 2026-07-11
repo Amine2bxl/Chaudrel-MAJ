@@ -36,7 +36,7 @@ export default function Portfolio() {
               key={project.title}
               delay={i * 120}
               margin="-60px"
-              className={`${project.span} group relative overflow-hidden`}
+              className={`${project.span} group relative overflow-hidden rounded-[1.75rem] lg:rounded-[2rem] shadow-[0_16px_48px_rgba(17,17,17,0.10)] ring-1 ring-brand-ink/5`}
             >
               <div className={`${project.aspect} overflow-hidden bg-brand-cream`}>
                 <img
@@ -45,14 +45,15 @@ export default function Portfolio() {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-ink/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <figcaption className="absolute bottom-0 left-0 right-0 p-6 lg:p-8 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                  <p className="text-[10px] tracking-[0.2em] uppercase text-brand-gold font-medium mb-2">
+                {/* Scrim permanent : garantit un texte blanc lisible quel que soit le fond de la photo */}
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-ink/85 via-brand-ink/25 to-transparent" />
+                <figcaption className="absolute bottom-0 left-0 right-0 p-5 lg:p-7">
+                  <p className="text-[10px] tracking-[0.2em] uppercase text-brand-goldLight font-semibold mb-1.5 drop-shadow">
                     {project.type}
                   </p>
-                  <div className="flex items-end justify-between">
-                    <h3 className="font-display text-xl lg:text-2xl font-light text-white">{project.title}</h3>
-                    <ArrowUpRight className="w-5 h-5 text-white/60" aria-hidden="true" />
+                  <div className="flex items-end justify-between gap-3">
+                    <h3 className="font-display text-xl lg:text-2xl font-light text-white drop-shadow">{project.title}</h3>
+                    <ArrowUpRight className="w-5 h-5 text-white/70 group-hover:text-brand-goldLight group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all duration-300 flex-shrink-0" aria-hidden="true" />
                   </div>
                 </figcaption>
               </div>

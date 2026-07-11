@@ -70,7 +70,7 @@ export default function Services() {
 
           <div className="col-span-7 relative">
             <div key={active} className="svc-slide sticky top-28">
-              <div className="aspect-[4/3] overflow-hidden mb-8 bg-brand-cream">
+              <div className="aspect-[4/3] overflow-hidden mb-8 bg-brand-cream rounded-[2rem] shadow-[0_16px_48px_rgba(17,17,17,0.10)] ring-1 ring-brand-ink/5">
                 <img
                   src={SERVICES[active].image}
                   alt={SERVICES[active].title}
@@ -91,7 +91,7 @@ export default function Services() {
           {SERVICES.map((service, i) => (
             <Reveal key={service.id} delay={i * 100}>
               <article>
-                <div className="aspect-[4/3] overflow-hidden mb-5 bg-brand-cream">
+                <div className="aspect-[4/3] overflow-hidden mb-5 bg-brand-cream rounded-[1.75rem] shadow-[0_12px_36px_rgba(17,17,17,0.08)] ring-1 ring-brand-ink/5">
                   <img src={service.image} alt={service.title} className="w-full h-full object-cover" loading="lazy" />
                 </div>
                 <p className="text-[10px] tracking-[0.2em] uppercase text-brand-gold font-medium mb-2">
