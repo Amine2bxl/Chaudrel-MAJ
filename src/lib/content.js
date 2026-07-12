@@ -27,37 +27,31 @@ export const BRAND = {
 export const LOGO = '/chaudrel-logo.webp';
 
 export const IMAGES = {
-  hero: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80',
+  hero: '/photos/hero.webp',
   beforeAfter: [
     {
       id: 'allee',
       label: 'Allée Extérieure',
       type: 'Asphalte Premium',
       location: 'Uccle, Bruxelles',
-      before:
-        'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=80',
-      after:
-        'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80',
+      before: '/photos/ba-allee-avant.webp',
+      after: '/photos/ba-allee-apres.webp',
     },
     {
       id: 'cuisine',
       label: 'Cuisine Moderne',
       type: 'Marbre & Bois Massif',
       location: 'Ixelles, Bruxelles',
-      before:
-        'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1200&q=80',
-      after:
-        'https://images.unsplash.com/photo-1556909172-54557c7e4fb7?auto=format&fit=crop&w=1200&q=80',
+      before: '/photos/ba-cuisine-avant.webp',
+      after: '/photos/ba-cuisine-apres.webp',
     },
     {
       id: 'terrasse',
       label: 'Terrasse & Jardin',
       type: 'Pierre Naturelle',
       location: 'Woluwe-Saint-Pierre',
-      before:
-        'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1200&q=80',
-      after:
-        'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80',
+      before: '/photos/ba-terrasse-avant.webp',
+      after: '/photos/ba-terrasse-apres.webp',
     },
   ],
   services: [
@@ -69,8 +63,7 @@ export const IMAGES = {
         "Rénovation de cuisine haut de gamme à Bruxelles — plans de travail en marbre de Carrare, façades en bois massif, îlot central sur mesure. Chaudrel conçoit des cuisines fonctionnelles et élégantes qui valorisent votre bien immobilier.",
       shortDescription:
         "Cuisines sur mesure en marbre de Carrare et bois massif — conception et pose clé en main à Bruxelles.",
-      image:
-        'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1200&q=80',
+      image: '/photos/svc-cuisine.webp',
     },
     {
       id: 'salle-de-bain',
@@ -80,8 +73,7 @@ export const IMAGES = {
         "Rénovation complète de salle de bain à Bruxelles et périphérie — douche italienne, baignoire îlot, carrelage grand format en pierre naturelle, robinetterie premium. Un espace spa sur mesure pour votre quotidien.",
       shortDescription:
         "Douche italienne, baignoire îlot, pierre naturelle — votre salle de bain spa sur mesure.",
-      image:
-        'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=80',
+      image: '/photos/svc-salle-de-bain.webp',
     },
     {
       id: 'jardin',
@@ -91,8 +83,7 @@ export const IMAGES = {
         "Aménagement paysager et rénovation d'extérieur en région bruxelloise — terrasse en pierre bleue belge, allée drainante, éclairage basse tension et espaces de vie outdoor clé en main. Expertise locale depuis 2009.",
       shortDescription:
         "Terrasse en pierre bleue, allée drainante, éclairage basse tension — extérieur clé en main.",
-      image:
-        'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
+      image: '/photos/svc-jardin.webp',
     },
     {
       id: 'toiture',
@@ -102,8 +93,7 @@ export const IMAGES = {
         "Rénovation de toiture à Bruxelles — pose d'ardoise naturelle, zinc à joint debout, membrane EPDM, isolation thermique conforme aux normes PEB. Devis gratuit, garantie décennale, intervention rapide.",
       shortDescription:
         "Ardoise, zinc à joint debout, isolation PEB — toiture durable garantie décennale.",
-      image:
-        'https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=1200&q=80',
+      image: '/photos/svc-toiture.webp',
     },
     {
       id: 'piscine',
@@ -113,8 +103,7 @@ export const IMAGES = {
         "Construction et rénovation de piscine privée à Bruxelles — piscine à débordement, liner sur mesure, pompe à chaleur, carrelage mosaïque ou pierre naturelle. Intégration paysagère soignée pour une valeur ajoutée durable.",
       shortDescription:
         "Piscine à débordement, mosaïque, pompe à chaleur — valeur ajoutée durable.",
-      image:
-        'https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=1200&q=80',
+      image: '/photos/svc-piscine.webp',
     },
     {
       id: 'nettoyage',
@@ -124,40 +113,35 @@ export const IMAGES = {
         "Service de nettoyage de fin de chantier et d'entretien haut de gamme à Bruxelles — dépoussiérage minutieux, nettoyage des vitres, traitement des sols, désinfection des sanitaires et remise au propre complète avant la livraison. Un chantier rendu clé en main, prêt à habiter.",
       shortDescription:
         "Nettoyage de fin de chantier haut de gamme — livraison prête à habiter.",
-      image:
-        'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80',
+      image: '/photos/svc-nettoyage.webp',
     },
   ],
   portfolio: [
     {
       title: 'Résidence Uccle',
       type: 'Rénovation Complète',
-      image:
-        'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1400&q=80',
+      image: '/photos/pf-1.webp',
       span: 'lg:col-span-2',
       aspect: 'aspect-[3/2]',
     },
     {
       title: 'Villa Tervuren — Intérieur',
       type: 'Architecture Intérieure',
-      image:
-        'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80',
+      image: '/photos/pf-2.webp',
       span: '',
       aspect: 'aspect-[4/5]',
     },
     {
       title: 'Terrasse Woluwe',
       type: 'Aménagement Extérieur',
-      image:
-        'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=900&q=80',
+      image: '/photos/pf-3.webp',
       span: '',
       aspect: 'aspect-[4/5]',
     },
     {
       title: 'Cuisine Ixelles',
       type: 'Cuisine Sur Mesure',
-      image:
-        'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1400&q=80',
+      image: '/photos/pf-4.webp',
       span: 'lg:col-span-2',
       aspect: 'aspect-[3/2]',
     },
