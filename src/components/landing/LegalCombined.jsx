@@ -144,7 +144,7 @@ function LegalBody() {
       <Section icon={Sparkles} title="7. Crédits">
         <ul className="space-y-1.5">
           <li><strong>Conception &amp; développement&nbsp;:</strong> Chaudrel × Zo Computer</li>
-          <li><strong>Typographies&nbsp;:</strong> Cormorant Garamond · Inter (Google Fonts)</li>
+          <li><strong>Typographies&nbsp;:</strong> Playfair Display · Inter (Google Fonts)</li>
           <li><strong>Photographies&nbsp;:</strong> Unsplash (libres de droits)</li>
           <li><strong>Icônes&nbsp;:</strong> Lucide</li>
         </ul>

@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        heading: ["'Cormorant Garamond'", 'Georgia', 'serif'],
+        heading: ["'Playfair Display'", 'Georgia', 'serif'],
         body: ['Inter', 'system-ui', 'sans-serif'],
-        display: ["'Cormorant Garamond'", 'Georgia', 'serif'],
+        display: ["'Playfair Display'", 'Georgia', 'serif'],
       },
       colors: {
         brand: {
