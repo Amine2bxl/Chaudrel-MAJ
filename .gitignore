@@ -35,5 +35,6 @@ coverage/
 
 # Vite cache
 .vite/
-.vercel
-.env*
+
+# Vercel CLI
+.vercel/

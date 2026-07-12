@@ -27,10 +27,7 @@ export const BRAND = {
 export const LOGO = '/chaudrel-logo.webp';
 
 export const IMAGES = {
-  // Hero auto-hébergé (ex-Unsplash, téléchargée puis convertie en WebP 3 tailles)
-  hero: '/photos/hero-villa-1920.webp',
-  heroSrcSet:
-    '/photos/hero-villa-960.webp 960w, /photos/hero-villa-1440.webp 1440w, /photos/hero-villa-1920.webp 1920w',
+  hero: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80',
   beforeAfter: [
     {
       id: 'allee',
@@ -94,7 +91,8 @@ export const IMAGES = {
         "Aménagement paysager et rénovation d'extérieur en région bruxelloise — terrasse en pierre bleue belge, allée drainante, éclairage basse tension et espaces de vie outdoor clé en main. Expertise locale depuis 2009.",
       shortDescription:
         "Terrasse en pierre bleue, allée drainante, éclairage basse tension — extérieur clé en main.",
-      image: '/photos/allee-garages.webp',
+      image:
+        'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
     },
     {
       id: 'toiture',
@@ -104,7 +102,8 @@ export const IMAGES = {
         "Rénovation de toiture à Bruxelles — pose d'ardoise naturelle, zinc à joint debout, membrane EPDM, isolation thermique conforme aux normes PEB. Devis gratuit, garantie décennale, intervention rapide.",
       shortDescription:
         "Ardoise, zinc à joint debout, isolation PEB — toiture durable garantie décennale.",
-      image: '/photos/maison-neuve-toiture.webp',
+      image:
+        'https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=1200&q=80',
     },
     {
       id: 'piscine',
@@ -129,33 +128,36 @@ export const IMAGES = {
         'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80',
     },
   ],
-  // Portfolio : vraies photos de chantiers Chaudrel (dossier client), auto-hébergées.
   portfolio: [
     {
-      title: 'Extension Vitrée',
-      type: 'Châssis Aluminium',
-      image: '/photos/extension-vitree.webp',
+      title: 'Résidence Uccle',
+      type: 'Rénovation Complète',
+      image:
+        'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1400&q=80',
       span: 'lg:col-span-2',
       aspect: 'aspect-[3/2]',
     },
     {
-      title: "Porte d'Entrée Contemporaine",
-      type: 'Portes Sur Mesure',
-      image: '/photos/porte-entree-contemporaine.webp',
+      title: 'Villa Tervuren — Intérieur',
+      type: 'Architecture Intérieure',
+      image:
+        'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80',
       span: '',
       aspect: 'aspect-[4/5]',
     },
     {
-      title: 'Façade Rénovée',
-      type: 'Châssis & Volets',
-      image: '/photos/facade-chassis-volets.webp',
+      title: 'Terrasse Woluwe',
+      type: 'Aménagement Extérieur',
+      image:
+        'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=900&q=80',
       span: '',
       aspect: 'aspect-[4/5]',
     },
     {
-      title: 'Châssis & Portes de Garage',
-      type: 'Menuiserie Extérieure',
-      image: '/photos/chassis-portes-garage.webp',
+      title: 'Cuisine Ixelles',
+      type: 'Cuisine Sur Mesure',
+      image:
+        'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1400&q=80',
       span: 'lg:col-span-2',
       aspect: 'aspect-[3/2]',
     },

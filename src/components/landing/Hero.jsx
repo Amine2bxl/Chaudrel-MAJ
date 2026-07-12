@@ -14,8 +14,6 @@ export default function Hero() {
       <div className="absolute inset-0 hero-kenburns">
         <img
           src={IMAGES.hero}
-          srcSet={IMAGES.heroSrcSet}
-          sizes="100vw"
           alt="Rénovation haut de gamme à Bruxelles par Chaudrel — cuisine, salle de bain, toiture, jardin, piscine"
           className="w-full h-full object-cover"
           width="1920"
